@@ -1,4 +1,6 @@
 Island::Application.routes.draw do
+  root :to => 'island#index'
+
   get "island/index"
 
   # The priority is based upon order of creation:
