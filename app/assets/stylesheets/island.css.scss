@@ -1,3 +1,99 @@
-// Place all the styles related to the Island controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@mixin rounded-corners($radius) {
+   border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+
+html {
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
+
+    /* Opera */ 
+    background-image: -o-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #7FD1EF));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: radial-gradient(circle closest-corner at center, #FFFFFF 0%, #7FD1EF 100%);
+    
+
+}
+
+body, .image {
+    margin-top:0;
+    height:100%;
+    width: 960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.image {
+  position:absolute;
+  margin-bottom:40px;
+}
+
+img{
+  display:block;
+  height:650px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.sun{
+  background: #fdfabf; /* Old browsers */
+  background: -moz-linear-gradient(top, #fdfabf 0%, #f5e617 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfabf), color-stop(100%,#f5e617)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fdfabf 0%,#f5e617 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fdfabf 0%,#f5e617 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fdfabf 0%,#f5e617 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #fdfabf 0%,#f5e617 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfabf', endColorstr='#f5e617',GradientType=0 ); /* IE6-9 */
+  @include rounded-corners(50px);
+  clear:both;
+  width: 80px;
+  height: 80px;
+  margin-top: 90px;
+  margin-left: 100px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.coconut {
+  background: rgb(240,183,161); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(240,183,161,1) 0%, rgba(140,51,16,1) 58%, rgba(117,34,1,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(240,183,161,1)), color-stop(58%,rgba(140,51,16,1)), color-stop(100%,rgba(117,34,1,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,183,161,1) 0%,rgba(140,51,16,1) 58%,rgba(117,34,1,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(240,183,161,1) 0%,rgba(140,51,16,1) 58%,rgba(117,34,1,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(240,183,161,1) 0%,rgba(140,51,16,1) 58%,rgba(117,34,1,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(240,183,161,1) 0%,rgba(140,51,16,1) 58%,rgba(117,34,1,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#752201',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  top:0;
+  height:40px;
+  margin-right:320px;
+  margin-top:110px;
+  position:absolute;
+  right:0;
+  width:40px;
+  @include rounded-corners(20px);
+}
+
+.two {
+  margin-right:410px;
+  margin-top:130px;
+}
