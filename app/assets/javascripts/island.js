@@ -8,14 +8,16 @@ $(document).ready(function(){
   });
 
   $('.starfish').click(function(){
-      $(this).toggle('explode');
+      $(this).attr("src","http://bbsimg.ngfiles.com/14/24482000/ngbbs511598d167806.gif").hide(1500);
   });
 
   $('.crab').click(function(){
     $(this).effect('shake', 'slow');
-  })
+  });
 
-});
+  $('.boat').toggle('fade', 8000);
+
+})
 
 
 
