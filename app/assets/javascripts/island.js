@@ -15,7 +15,7 @@ $(document).ready(function(){
     $(this).effect('shake', 'slow');
   });
 
-  $('.boat').toggle('fade', 10000);
+  $('.boat').toggle('fade', 15000);
 
 })
 
