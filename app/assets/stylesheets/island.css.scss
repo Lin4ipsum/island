@@ -4,27 +4,12 @@
   -webkit-border-radius: $radius;
 }
 
-
 html {
-    /* IE10 Consumer Preview */ 
-    background-image: -ms-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
-
-    /* Mozilla Firefox */ 
-    background-image: -moz-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
-
-    /* Opera */ 
-    background-image: -o-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
-
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #7FD1EF));
-
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #7FD1EF 100%);
-
-    /* W3C Markup, IE10 Release Preview */ 
-    background-image: radial-gradient(circle closest-corner at center, #FFFFFF 0%, #7FD1EF 100%);
-    font-size:100%;
-
+  background: url("http://images2.layoutsparks.com/1/210989/beach-paradise-deault-trees.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body, .image {
@@ -33,6 +18,7 @@ body, .image {
     width: 960px;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:0;
 }
 
 h1{
@@ -43,7 +29,6 @@ h1{
   position:absolute;
   top:0;
   left:0;
-  margin-left:120px;
   z-index:3;
 }
 
@@ -54,7 +39,7 @@ h1{
 
 img{
   display:block;
-  height:650px;
+  height:100%;
   margin-left:auto;
   margin-right:auto;
   width:100%;
@@ -79,8 +64,8 @@ img{
   clear:both;
   width: 80px;
   height: 80px;
-  margin-top: 190px;
-  margin-left: 100px;
+  margin-top: 100px;
+  margin-left: 70px;
   position: absolute;
   top:0;
   left:0;
@@ -98,7 +83,7 @@ img{
   top:0;
   height:40px;
   margin-right:320px;
-  margin-top:110px;
+  margin-top:80px;
   position:absolute;
   right:0;
   width:40px;
@@ -106,8 +91,8 @@ img{
 }
 
 .two {
-  margin-right:410px;
-  margin-top:130px;
+  margin-right:380px;
+  margin-top:50px;
 }
 
 
@@ -125,9 +110,9 @@ img{
 .crab {
   height:100px;
   position:absolute;
-  left:0;
-  margin-left:50px;
+  right:0;
   bottom:0;
+  top:600px;
   width:100px;
 }
 
